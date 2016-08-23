@@ -1,0 +1,109 @@
+@media screen and (min-width: 768px) {
+    .logo{
+        width: initial;
+        padding-bottom: 0;
+        margin: 0 auto;
+        display: block;
+    }
+    .page-content{
+        margin-top: 149px;
+        & h1{
+            text-align: left;
+        }
+    }
+    .navbar-header{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .nav{
+        .active>a{
+            background: initial !important;
+            color: $primary-color !important;
+        }
+    }
+    .carousel-inner{
+        & .item{
+            margin-top:35px;
+        }
+    }
+    .about-content{
+        & p{
+            margin-top: 0;
+            padding-left: 15px;
+            border-left: 5px solid $secondary-color;
+        }
+    }
+    .product-search{
+        & select{
+            width: 92%;
+        }
+    }
+}
+@media screen and (min-width: 992px) {
+    .carousel-inner{
+        & .carousel-heading{
+            left: 0;
+            transform: none;
+            width: initial;
+            font-size: 2em;
+        }
+        & .item{
+            margin-top: 50px;
+            & .carousel-text{
+                text-align: left !important;
+                font-size: 1.4em;
+                padding-left: 15px;
+                border-left: 5px solid $secondary-color;
+            }
+            & .carousel-img{
+                float: right;
+                margin-top: -100px !important;
+            }
+        }
+    }
+    .social-media{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding-right: 15px;
+        border-right: 5px solid $secondary-color;
+        & p{
+            margin-top: -5px;
+        }
+        & ul {
+            margin-bottom: -5px;
+            & li{
+                font-size: 1.8em;
+                margin: 0 10px;
+            }
+        }
+    }
+    .services-content{
+        & p{
+            margin-top: 0;
+            padding-left: 15px;
+            border-left: 5px solid $secondary-color;
+        }
+    }
+    .product-search{
+        text-align: left;
+    }
+
+    .product-search select, #addProductToggle{
+        width: 205px;
+    }
+    #gmap_canvas{
+        width:360px;
+    }
+}
+
+@media not all, (-webkit-transform-3d){
+    .carousel-inner>.item.active, .carousel-inner>.item.next.left, .carousel-inner>.item.prev.right {
+        -o-transform: none !important;
+        -moz-transform: none !important;
+        -ms-transform: none !important;
+        -webkit-transform: none !important;
+        transform: none !important;
+    }
+}

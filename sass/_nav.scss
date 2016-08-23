@@ -1,0 +1,20 @@
+/**************************
+	Navbar CSS
+**************************/
+.navbar-toggle{
+    position: absolute;
+    top: 0;
+    right: 0;
+    &:hover, &:focus{
+        background: transparent !important;
+    }
+}
+.navbar{
+    box-shadow: 0 3px 8px #555 !important;
+}
+.nav{
+    & .active>a{
+        background: $primary-color !important;
+        color: white !important;
+    }
+}

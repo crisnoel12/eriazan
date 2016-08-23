@@ -1,0 +1,195 @@
+/**************************
+	Base CSS
+**************************/
+* {
+    box-shadow: none !important;
+    outline: none !important;
+    text-decoration: none !important;
+    list-style: none;
+}
+body,html{
+    font-size: 16px;
+}
+body{
+	background: $primary-color;
+}
+a,
+body,
+button,
+input,
+li,
+p {
+    font-family: $base-font;
+}
+a{
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+    color: $primary-color;
+    &:hover{
+        color: $primary-color !important;
+    }
+}
+input{
+    width: 100%;
+}
+textarea {
+    resize: none;
+}
+.heading-font{
+    font-family: $heading-font;
+}
+.base-font{
+    font-family: $base-font;
+}
+.red{
+    color: red;
+    &:hover{
+        color: red !important;
+    }
+}
+#load_bar{
+    position: absolute;
+    height: 4px;
+    width: 8%;
+    background-color: $primary-color;
+    -webkit-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+}
+.logo{
+    width: 270px;
+    padding-bottom: 8px;
+}
+.flash-message{
+    padding: 15px;
+    margin-bottom: -10px;
+    margin-top: -13px;
+    font-size: 1.2em;
+    background: $secondary-color;
+    color: white;
+}
+.form-control{
+    display: inline-block;
+}
+#addProductToggle{
+    margin: 10px 0 -20px;
+    width: 100%;
+}
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?ge501r');
+	src:url('../fonts/icomoon.eot?#iefixge501r') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf?ge501r') format('truetype'),
+		url('../fonts/icomoon.woff?ge501r') format('woff'),
+		url('../fonts/icomoon.svg?ge501r#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook2:before {
+	content: "\e600";
+}
+.icon-instagram:before {
+	content: "\e601";
+}
+.icon-twitter2:before {
+	content: "\e602";
+}
+/**************************
+	Carousel CSS
+**************************/
+.jumbotron{
+    background: transparent;
+}
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-indicators{
+    bottom: 0;
+    & li{
+        border-color: $secondary-color;
+        &.active{
+            background: $secondary-color;
+        }
+    }
+}
+.carousel-inner{
+    & .carousel-heading{
+        background: transparent;
+        font-family: $heading-font;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: $primary-color;
+        text-transform: uppercase;
+        text-align: center;
+        z-index: 1;
+        margin: 0;
+        position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
+        width: 100%;
+    }
+    & .item{
+        margin: 58px 0 10px;
+        & .carousel-text{
+            text-align: center;
+            color: grey;
+            font-size: 1.2em;
+        }
+        & .carousel-img{
+            margin: 0 auto;
+        }
+    }
+}
+/**************************
+	Social Media CSS
+**************************/
+.social-media{
+    text-align: center;
+    & p{
+        color: grey;
+    }
+    & ul{
+        padding-left: 0;
+        & li{
+            display: inline-block;
+            font-size: 1.5em;
+            margin: 0 4px;
+            & a{
+                color: #444;
+                &:hover{
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}

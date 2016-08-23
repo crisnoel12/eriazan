@@ -1,0 +1,142 @@
+/**************************
+	Page-Content CSS
+**************************/
+.page-content{
+    margin-top: 99px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    background: white;
+    border-bottom-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+    box-shadow: 4px 0 8px #555, -4px 0 8px #555 !important;
+    & .heading{
+        margin-bottom: 10px;
+    }
+    & h1{
+        color: $primary-color;
+        font-family: $heading-font;
+        font-weight: 700;
+        margin: 20px 0 5px;
+        text-align: center;
+    }
+}
+.section{
+    margin-bottom: 80px;
+    & img{
+        width: 100%;
+    }
+}
+.footer{
+    font-size: .9em;
+}
+/***********************************
+   About & Services Paragraph CSS
+***********************************/
+.about-content, .services-content{
+    & p{
+        margin-top: 10px;
+        letter-spacing: 0.07em;
+        line-height: 1.5em;
+    }
+}
+/***********************************
+   Services CSS
+***********************************/
+.services-content{
+    & .services-list{
+        & li{
+            list-style: initial;
+            font-weight: 700;
+        }
+    }
+}
+/***********************************
+   Products CSS
+***********************************/
+.product-search{
+    text-align: center;
+    & select{
+        width: 84%;
+    }
+    & .glyphicon-search{
+        font-size: 15px;
+        color:white;
+    }
+    & button{
+        background: $secondary-color;
+    }
+}
+.products-content{
+    margin-top: 20px;
+    & .product{
+        margin-bottom: 20px;
+    }
+    & .prod-info{
+        background: whitesmoke;
+        padding: 12px 0 1px;
+        text-align: center;
+        font-size: .8em;
+    }
+    & .price{
+        color: lighten($secondary-color, 10%);
+        font-weight: 700;
+        display: block;
+        margin-top: 8px;
+        letter-spacing: .05em;
+    }
+}
+.paging{
+    text-align: right;
+    & a{
+        padding: 10px 12px;
+        font-size: 1.5em;
+        background: lightgrey;
+        color: white;
+        margin: 0 2px;
+        &.active, &:hover{
+            background: $primary-color;
+            color: white !important;
+        }
+    }
+}
+/***********************************
+   Contact CSS
+***********************************/
+.contact-form{
+    margin-bottom: 40px;
+    .form-control{
+        width: 100%;
+        margin: 0 0 15px;
+        background: whitesmoke;
+        border: 0;
+        padding: 16px;
+    }
+    .send-btn{
+        background: $primary-color;
+        border: 0;
+        width: 100%;
+        padding: 12px 0;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: .08em;
+        font-weight: 700;
+        &:hover{
+            background: $secondary-color;
+            color: white !important;
+        }
+    }
+}
+.contact-details{
+    margin-bottom: 10px;
+    & span{
+        color: $primary-color;
+        margin-right: 5px;
+    }
+    & th{
+        border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    }
+}
+#gmap_canvas{
+    width: 280px;
+    height: 256px;
+}
