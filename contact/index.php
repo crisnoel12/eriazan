@@ -120,8 +120,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             </table>
 
 			<!-- Map -->
-            <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
-			<div id='gmap_canvas'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(14.2183093,120.97285360000001),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(14.2183093,120.97285360000001)});infowindow = new google.maps.InfoWindow({content:'<strong>Next To Angelfields</strong><br>Silang, Cavite, Ph<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+            Google Maps Here
 		</div>
 	</div>
 	<?php } ?>
